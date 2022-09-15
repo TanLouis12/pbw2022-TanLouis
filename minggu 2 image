@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>belajar HTML 5</title>
+</head>
+<body>
+	<!--dibuat di lab D3M tanggal 13 september 2022-->
+	<h1>Belajar image html</h1>
+	<img src="jellyfish.jpg" style="width:500px;height600px;">
+	
+</body>
+</html>
