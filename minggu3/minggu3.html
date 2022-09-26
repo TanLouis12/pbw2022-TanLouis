@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar HTML5 </title>
+	</head>
+	<body>
+		<h2>VIDEO HTML 5 </h2>
+		<p>
+			<button onclick="playVid()" type="button">play Vid</button>
+			<button onclick="pauseVid()" type="button">pause Vid</button>
+			<button onclick="controlsplayVid()" type="button">controls ON</button>
+			<button onclick="controlspauseVid()" type="button">controls OFF </button>
+			<button onclick="cekdurasi()" type="button">Durasi Video </button>
+		<video id="MyVideo">
+			<source src="filem.mp4" type="video/mp4">
+		</video>
+	</body>
+
+	<script>
+var vid = document.getElementById("MyVideo"); 
+
+function cekdurasi() {
+	alert(vid.duration)
+}
+function playVid() {
+    vid.play();
+	vid.loop = true
+}
+
+function pauseVid() {
+    vid.pause();
+}
+function controlsplayVid(){
+	vid.controls = true;
+	vid.load();
+}
+function controlspauseVid(){
+	vid.controls = false;
+	vid.load();
+}
+</script> 
+</html>
