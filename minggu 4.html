@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Form HTML 5 </title>
+    </head>    
+    <body>
+        <h2> Element Form HTML 5 </h2>
+        <form name="FMHS" method="POST" action="proses.php">
+        <table>
+            <tr>
+                <td>NIM   </td>
+                <td><input type="number" name="fnim" required></td>
+            </tr>
+            <tr>
+                <td>Nama  </td>
+                <td><input type="Text" name="fnama" required></td>
+            </tr>
+            <tr>
+                <td>Tgl Lhr  </td>
+                <td><input type="Date" name="tgllhr" required></td>
+             </tr>
+             <tr>
+                <td>Prodi</td>
+                <td><select name="fprodi" required>
+                        <option value=""> Pilih </option>
+                        <option value="A11"> S1 - Teknik Informatika 
+                        </option>
+                        <option value="A12"> S1 - Sistem Informatika 
+                        </option>
+                        <option Value="A13"> D4 - Teknik Informatika 
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Bidang Minat</td>
+                <td><input type="Checkbox" name="fbd1" Value="1"><label> Web Programming      </label> <br>
+                    <input type="checkbox" name="fbd2" Value="2"><label> Mobile Programming   </label> <br>
+                    <input type="checkbox" name="fbd3" Value="3"><label> Data Science         </label> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Berkas CV </td>
+                <td><input type="file" name="fberkas" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="left">
+                    <input type="submit" name="fsubmit" value="Kirim">
+                    <input type="hidden" name="fhidden" value="Rahasia">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
